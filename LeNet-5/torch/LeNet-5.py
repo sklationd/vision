@@ -229,4 +229,8 @@ for test_data in test_loader:
 print("Classifier Accuracy: ", ((correct*100.0)/total).item())
 
 
+# In[10]
+PATH = './mnist_LeNet-5.pth'
+torch.save(net.state_dict(), PATH)
+
 # %%
